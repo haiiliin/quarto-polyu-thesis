@@ -16,10 +16,7 @@ book:
   navbar:
     search: true
   chapters:
-    - chapters/introduction.md
-
-title: Title
-author: Author
+    - index.md
 
 abstract: |
   This document is a template demonstrating the geotechnique format.
