@@ -18,8 +18,11 @@ book:
   chapters:
     - index.md
 
+# title: Title
+# author: Author
+
 abstract: |
-  This document is a template demonstrating the geotechnique format.
+  Abstract.
 
 keywords:
   - Keyword 1
