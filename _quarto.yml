@@ -17,6 +17,7 @@ book:
     search: true
   chapters:
     - index.md
+    - chapters/chapter-1.md
 
 # title: Title
 # author: Author
