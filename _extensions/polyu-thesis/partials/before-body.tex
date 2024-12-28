@@ -30,9 +30,9 @@
 
 $abstract$
 
-\textbf{Keywords: }
-$for(keywords/allbutlast)$$keywords$; $endfor$
-$for(keywords/last)$$keywords$$endfor$
+$if(keywords)$
+\textbf{Keywords: } $for(keywords/allbutlast)$$keywords$; $endfor$$for(keywords/last)$$keywords$$endfor$
+$endif$
 \cleardoublepage
 
 %% Acknowledgement
