@@ -47,7 +47,3 @@ format:
 - `keywords`: Keywords
 - `acknowledgement`: Acknowledgement
 - `declaration`: Declaration
-
-## Example
-
-Here is the source code for a minimal sample document: [template.qmd](template.qmd).

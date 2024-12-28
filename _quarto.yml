@@ -1,9 +1,29 @@
----
-title: Title
-author: Author
+project:
+  type: book
+
+comments:
+  hypothesis: true
+
+book:
+  title: Title
+  author: Hailin Wang
+  back-to-top-navigation: true
+  page-navigation: true
+  repo-url: https://github.com/haiiliin/quarto-polyu-thesis
+  repo-actions: [edit, issue]
+  search: true
+  downloads: [pdf, docx]
+  navbar:
+    search: true
+  chapters:
+    - index.md
+    - chapters/chapter-1.md
+
+# title: Title
+# author: Author
 
 abstract: |
-  This document is a template demonstrating the geotechnique format.
+  Abstract.
 
 keywords:
   - Keyword 1
@@ -27,21 +47,14 @@ supervisor: Supervisor
 acknowledgement: Acknowledgement
 declaration: Declaration
 
+bibliography: bibliography.bib
+
 format:
+  docx: default
   html:
     toc: true
     code-fold: true
     appendix-cite-as: display
     link-external-newwindow: true
     output-file: index
-  polyu-thesis-pdf:
-    keep-tex: true
-
-bibliography: bibliography.bib
----
-
-# Introduction {#sec-intro}
-
-This is a quarto template for Geotechnique journal.
-
-This is a citation: @CameronTrivedi2013.
+  polyu-thesis-pdf: default
