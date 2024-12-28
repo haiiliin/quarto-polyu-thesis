@@ -1,0 +1,17 @@
+% **************************************************
+% Document Class Definition
+% **************************************************
+\documentclass[%
+	paper=A4,					   % paper size --> A4 is default in Germany
+	twoside=true,			 	 % onesite or twoside printing
+	openright,					 % doublepage cleaning ends up right side
+	parskip=full,				 % spacing value / method for paragraphs
+	chapterprefix=true,	 % prefix for chapter marks
+	12pt,						     % font size
+	headings=normal,		 % size of headings
+	bibliography=totoc,	 % include bib in toc
+	listof=totoc,			   % include listof entries in toc
+	titlepage=on,				 % own page for each title page
+	captions=tableabove, % display table captions above the float env
+	draft=$if(draft)$$else$false$endif$,	% value for draft version
+]{scrreprt}%

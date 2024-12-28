@@ -1,0 +1,17 @@
+title: The Hong Kong Polytechnic University Thesis Template
+author: Hailin Wang
+version: 1.0.0
+quarto-required: ">=1.6.0"
+contributes:
+  formats:
+    pdf:
+      documentclass: polyuthesis
+      template-partials:
+        - partials/doc-class.tex
+        - partials/before-title.tex
+        - partials/before-body.tex
+      format-resources:
+        - cleanthesis.sty
+        - PolyU_Logo_CMKY.pdf
+      cite-method: biblatex
+      top-level-division: chapter

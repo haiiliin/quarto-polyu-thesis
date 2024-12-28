@@ -1,0 +1,46 @@
+---
+title: Title
+author: Author
+
+abstract: |
+  This document is a template demonstrating the geotechnique format.
+
+keywords:
+  - Keyword 1
+  - Keyword 1
+
+subject: Subject
+date: June 2025
+version: Version
+
+university: The Hong Kong Polytechnic University
+department: Department of Civil and Environmental Engineering
+institute: Thesis Research Centre
+
+city: Hong Kong
+address: Hung Hom, Kowloon
+
+first_viewer: First viewer
+second_viewer: Second viewer
+
+supervisor: Supervisor
+acknowledgement: Acknowledgement
+declaration: Declaration
+
+format:
+  html:
+    toc: true
+    code-fold: true
+    appendix-cite-as: display
+    link-external-newwindow: true
+  polyu-thesis-pdf:
+    keep-tex: true
+
+bibliography: bibliography.bib
+---
+
+# Introduction {#sec-intro}
+
+This is a quarto template for Geotechnique journal.
+
+This is a citation: @CameronTrivedi2013.

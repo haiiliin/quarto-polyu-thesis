@@ -1,0 +1,59 @@
+% **************************************************
+% Debug LaTeX Information
+% **************************************************
+%\listfiles
+
+% **************************************************
+% Information and Commands for Reuse
+% **************************************************
+\newcommand{\thesisTitle}{$title$}
+\newcommand{\thesisName}{$author$}
+\newcommand{\thesisSubject}{$subject$}
+\newcommand{\thesisDate}{$date$}
+\newcommand{\thesisVersion}{$version$}
+
+\newcommand{\university}{\protect{$if(university)$$university$$else$The Hong Kong Polytechnic University$endif$}}
+
+\newcommand{\thesisFirstReviewer}{$first_viewer$}
+\newcommand{\thesisFirstReviewerUniversity}{\university}
+\newcommand{\thesisFirstReviewerDepartment}{$department$}
+
+\newcommand{\thesisSecondReviewer}{$second_viewer$}
+\newcommand{\thesisSecondReviewerUniversity}{\university}
+\newcommand{\thesisSecondReviewerDepartment}{$department$}
+
+\newcommand{\thesisFirstSupervisor}{$supervisor$}
+
+\newcommand{\thesisUniversity}{\university}
+\newcommand{\thesisUniversityDepartment}{$department$}
+\newcommand{\thesisUniversityInstitute}{$if(institute)$$institute$$else$Thesis Research Centre$endif$}
+\newcommand{\thesisUniversityCity}{$if(city)$$city$$else$Hong Kong$endif$}
+\newcommand{\thesisUniversityStreetAddress}{$if(address)$$address$$else$Hung Hom, Kowloon$endif$}
+
+
+% **************************************************
+% Load and Configure Packages
+% **************************************************
+\usepackage[utf8]{inputenc}		% defines file's character encoding
+\usepackage[english]{babel} % babel system, adjust the language of the content
+\usepackage[					% clean thesis style
+	figuresep=colon,%
+	sansserif=false,%
+	hangfigurecaption=false,%
+	hangsection=true,%
+	hangsubsection=true,%
+	colorize=full,%
+	colortheme=bluemagenta,%
+]{cleanthesis}
+
+\hypersetup{					% setup the hyperref-package options
+	pdftitle={\thesisTitle},	% 	- title (PDF meta)
+	pdfsubject={\thesisSubject},% 	- subject (PDF meta)
+	pdfauthor={\thesisName},	% 	- author (PDF meta)
+	plainpages=false,			% 	- 
+	colorlinks=false,			% 	- colorize links?
+	pdfborder={0 0 0},			% 	-
+	breaklinks=true,			% 	- allow line break inside links
+	bookmarksnumbered=true,		%
+	bookmarksopen=true			%
+}

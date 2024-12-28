@@ -1,0 +1,63 @@
+% --------------------------
+% rename document parts
+% --------------------------
+%\renewcaptionname{ngerman}{\figurename}{Abb.}
+%\renewcaptionname{ngerman}{\tablename}{Tab.}
+\renewcaptionname{english}{\figurename}{Fig.}
+\renewcaptionname{english}{\tablename}{Table}
+
+% --------------------------
+% Front matter
+% --------------------------
+\pagenumbering{roman}			% roman page numbing (invisible for empty page style)
+%\pagestyle{empty}				% no header or footers
+%\input{content/titlepages}		% INCLUDE: all titlepages
+%\cleardoublepage
+
+\thesistitlepage{Doctor of Philosophy}%{Temporary Binding for Examination Purposes}
+%\thesistitlepage{Master of Philosophy}%{Temporary Binding for Examination Purposes}
+\cleardoublepage
+
+\pagestyle{plain}				% display just page numbers
+\declaration
+\cleardoublepage
+
+%% Abstract
+\pdfbookmark[0]{Abstract}{Abstract}
+\chapter*{Abstract}
+\label{sec:abstract}
+\vspace*{-10mm}
+
+$abstract$
+
+\textbf{Keywords: }
+$for(keywords/allbutlast)$$keywords$; $endfor$
+$for(keywords/last)$$keywords$$endfor$
+\cleardoublepage
+
+%% Acknowledgement
+\pdfbookmark[0]{Acknowledgement}{Acknowledgement}
+\chapter*{Acknowledgement}
+\label{sec:acknowledgement}
+\vspace*{-10mm}
+
+$acknowledgment$
+\cleardoublepage
+
+%% Table of Contents
+\setcounter{tocdepth}{2}		% define depth of toc
+\tableofcontents				% display table of contents
+\cleardoublepage
+
+\listoffigures
+\cleardoublepage
+
+\listoftables
+\cleardoublepage
+
+% --------------------------
+% Body matter
+% --------------------------
+\pagenumbering{arabic}			% arabic page numbering
+\setcounter{page}{1}			% set page counter
+\pagestyle{maincontentstyle} 	% fancy header and footer
