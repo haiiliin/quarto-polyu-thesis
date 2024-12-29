@@ -52,14 +52,14 @@ acknowledgements: Acknowledgements
 bibliography: bibliography.bib
 
 format:
-  docx:
-    output-file: polyu-thesis
   html:
     theme: cosmo
     toc: true
     code-fold: true
     appendix-cite-as: display
     link-external-newwindow: true
+    output-file: polyu-thesis
+  docx:
     output-file: polyu-thesis
   polyu-thesis-pdf:
     keep-tex: true
