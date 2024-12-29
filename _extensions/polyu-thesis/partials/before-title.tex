@@ -11,6 +11,11 @@
 \newcommand{\thesisSubject}{$subject$}
 \newcommand{\thesisDate}{$date$}
 \newcommand{\thesisVersion}{$version$}
+\ifthenelse{\equal{$degree$}{doctor}}{
+  \newcommand{\thesisDegree}{PhD}
+}{
+  \newcommand{\thesisDegree}{MPhil}
+}
 
 \newcommand{\university}{\protect{$if(university)$$university$$else$The Hong Kong Polytechnic University$endif$}}
 

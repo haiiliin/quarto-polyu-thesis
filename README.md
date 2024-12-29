@@ -30,6 +30,7 @@ format:
 ## Options
 
 - `draft`: Set to `true` to enable draft mode.
+- `degree`: Degree, `master` or `doctor`, by default `doctor`
 - `title`: Title
 - `author`: Author
 - `subject`: Subject

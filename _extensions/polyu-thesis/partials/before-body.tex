@@ -14,8 +14,13 @@
 % \input{titlepages}     % INCLUDE: all titlepages
 % \cleardoublepage
 
-\thesistitlepage{Doctor of Philosophy}%{Temporary Binding for Examination Purposes}
-%\thesistitlepage{Master of Philosophy}%{Temporary Binding for Examination Purposes}
+%% title page
+\pagestyle{empty}
+\ifthenelse{\equal{\thesisDegree}{PhD}}{
+  \thesistitlepage{Doctor of Philosophy}%{Temporary Binding for Examination Purposes}
+}{
+  \thesistitlepage{Master of Philosophy}%{Temporary Binding for Examination Purposes}
+}
 \cleardoublepage
 
 \pagestyle{plain}				% display just page numbers
