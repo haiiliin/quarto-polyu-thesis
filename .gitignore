@@ -15,7 +15,9 @@
 /site_libs/
 /template_files/
 /*.aux
+/*.bbl
 /*.bcf
+/*.blg
 /*.bst
 /*.cfg
 /*.cls
