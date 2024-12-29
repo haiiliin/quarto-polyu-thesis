@@ -46,4 +46,3 @@ format:
 - `abstract`: Abstract
 - `keywords`: Keywords
 - `acknowledgement`: Acknowledgement
-- `declaration`: Declaration
