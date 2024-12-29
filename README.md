@@ -33,6 +33,8 @@ format:
 - `degree`: Degree, `master` or `doctor`, by default `doctor`
 - `title`: Title
 - `author`: Author
+- `abstract`: Abstract
+- `keywords`: Keywords
 - `subject`: Subject
 - `date`: Date
 - `version`: Version
@@ -46,6 +48,4 @@ format:
 - `first_viewer`: First viewer
 - `second_viewer`: Second viewer
 - `supervisor`: Supervisor
-- `abstract`: Abstract
-- `keywords`: Keywords
 - `acknowledgement`: Acknowledgement
