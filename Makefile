@@ -13,7 +13,7 @@ release-%:
 	mkdir -p releases/$*
 	quarto render --output-dir releases/$*
 	cp index.tex releases/$*/$(project).tex
-	cp cleanthesis.sty PolyU_Logo_CMKY.pdf titlepages.tex releases/$*/
+	cp cleanthesis.sty PolyU_Logo_CMKY.pdf releases/$*/
 	cp bibliography.bib releases/$*/
 	echo $* > releases/VERSION
 
