@@ -11,10 +11,9 @@ book:
   page-navigation: true
   repo-url: https://github.com/haiiliin/quarto-polyu-thesis
   repo-actions: [edit, issue]
-  search: true
   downloads: [pdf, docx]
   output-file: polyu-thesis
-  navbar:
+  sidebar:
     search: true
   chapters:
     - index.md
