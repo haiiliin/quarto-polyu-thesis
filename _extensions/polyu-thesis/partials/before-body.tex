@@ -9,10 +9,15 @@
 % --------------------------
 % Front matter
 % --------------------------
-% \pagenumbering{roman}  % roman page numbing (invisible for empty page style)
-% \pagestyle{empty}	   % no header or footers
-% \input{titlepages}     % INCLUDE: all titlepages
-% \cleardoublepage
+
+%% Cover page
+\pagestyle{empty}	   % no header or footers
+\ifthenelse{\equal{\thesisDraft}{true}}{
+  \thesiscoverpage{Initial Submission for Examination Purpose}
+}{
+  \thesiscoverpage{}
+}
+\cleardoublepage
 
 %% title page
 \pagestyle{empty}

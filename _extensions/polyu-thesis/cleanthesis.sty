@@ -683,6 +683,38 @@
 % Clean signs around word origins in definitions
 %\newcommand{\cthesisorigin}[1]{\textsf{\textlangle}#1\textsf{\textrangle}}
 
+% Command for creating the thesis cover page
+\newcommand{\thesiscoverpage}[1]{%
+  \pdfbookmark[0]{Cover Page}{Cover Page}
+  \label{sec:coverpage}
+  \thispagestyle{empty}
+  \begin{center}
+	\renewcommand{\baselinestretch}{3.0}%
+	\textbf{\LARGE \uppercase {\thesisTitle}}
+	\vspace{2.0cm}
+
+	\renewcommand{\baselinestretch}{1.0}%
+	\textbf{\LARGE \uppercase {\thesisName}}
+	\vspace{2.0cm}
+
+	\textbf{\Large \uppercase {\thesisDegree}}
+	\vspace{2.0cm}
+
+	\textbf{\large \uppercase {\thesisUniversity}}
+	\vspace{2.0cm}
+
+	\ifx\thesisPartnerUniversity\empty\else
+	  \renewcommand{\baselinestretch}{1.0}%
+	  \textbf{\large {This programme is jointly offered by The Hong Kong Polytechnic University and name of  \thesisPartnerUniversityDepartment}}
+	  \vspace{2.0cm}
+	\fi
+
+	\textbf{\large {\thesisYear}}
+
+	\vspace{2.0cm}
+	\textbf{\large {#1}}
+  \end{center}
+}
 
 % Command for creating the thesis title page in accordance with the
 % requirements of the Hong Kong Polytechnic University.
