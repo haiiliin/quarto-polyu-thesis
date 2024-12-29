@@ -48,3 +48,44 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: outputs
           force_orphan: true
+
+  diff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.6.39
+          tinytex: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get the latest version and current short sha
+        run: |
+          echo "version=$(cat releases/VERSION || echo '')" >> $GITHUB_ENV
+          echo "sha=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
+      - name: Build diff for the latest changes
+        if: env.version != ''
+        run: |
+          if [ -d "releases/$version" ]; then
+            echo "latexdiff=true" >> $GITHUB_ENV
+            sudo apt update
+            sudo apt install -y latexdiff texlive-latex-extra texlive-xetex texlive-publishers texlive-lang-chinese texlive-bibtex-extra
+
+            make release-$sha
+            make diff previous=$version current=$sha
+          fi
+
+      - name: Upload latexdiff assets
+        if: env.latexdiff == 'true' && always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diff-${{ env.version }}-${{ env.sha }}
+          path: releases/${{ env.sha }}

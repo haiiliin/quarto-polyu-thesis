@@ -13,6 +13,7 @@ book:
   repo-actions: [edit, issue]
   search: true
   downloads: [pdf, docx]
+  output-file: index
   navbar:
     search: true
   chapters:
@@ -59,3 +60,4 @@ format:
     output-file: index
   polyu-thesis-pdf:
     keep-tex: true
+    output-file: index
