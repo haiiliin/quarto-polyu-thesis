@@ -29,12 +29,13 @@ format:
 
 ## Options
 
-- `draft`: Set to `true` to enable draft mode.
+- `draft`: Set to `true` to enable draft mode, by default `true`.
 - `degree`: Degree, `master` or `doctor`, by default `doctor`
 - `title`: Title
 - `author`: Author
 - `subject`: Subject
 - `date`: Date
+- `year`: Year
 - `version`: Version
 - `university`: University, by default "The Hong Kong Polytechnic University"
 - `department`: Department
