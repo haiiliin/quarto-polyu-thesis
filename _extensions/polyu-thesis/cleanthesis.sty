@@ -702,6 +702,18 @@
   \textbf{\Large {\thesisUniversityDepartment}}
   \vspace{2.0cm}
 
+  \ifx\thesisPartnerUniversity\empty\else
+	\renewcommand{\baselinestretch}{1.0}%
+	\textbf{\LARGE {\thesisPartnerUniversity}}
+	\vspace{0.5cm}
+  \fi
+
+  \ifx\thesisPartnerUniversityDepartment\empty\else
+    \renewcommand{\baselinestretch}{1.0}%
+    \textbf{\Large {\thesisPartnerUniversityDepartment}}
+    \vspace{2.0cm}
+  \fi
+
   \renewcommand{\baselinestretch}{1.0}%
   \textbf{\LARGE {\thesisTitle}}
   \vspace{2.0cm}

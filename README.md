@@ -40,6 +40,8 @@ format:
 - `institute`: Institute, by default "Thesis Research Centre"
 - `city`: City, by default "Hong Kong"
 - `address`: Address, by default "Hung Hom, Kowloon"
+- `partner_university`: Partner university
+- `partner_department`: Partner department
 - `first_viewer`: First viewer
 - `second_viewer`: Second viewer
 - `supervisor`: Supervisor
