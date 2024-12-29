@@ -13,7 +13,7 @@ book:
   repo-actions: [edit, issue]
   search: true
   downloads: [pdf, docx]
-  output-file: index
+  output-file: polyu-thesis
   navbar:
     search: true
   chapters:
@@ -53,13 +53,14 @@ acknowledgements: Acknowledgements
 bibliography: bibliography.bib
 
 format:
-  docx: default
+  docx:
+    output-file: polyu-thesis
   html:
     toc: true
     code-fold: true
     appendix-cite-as: display
     link-external-newwindow: true
-    output-file: index
+    output-file: polyu-thesis
   polyu-thesis-pdf:
     keep-tex: true
-    output-file: index
+    output-file: polyu-thesis
