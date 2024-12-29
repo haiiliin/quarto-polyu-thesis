@@ -6,7 +6,6 @@ comments:
 
 book:
   title: Title
-  author: Hailin Wang
   back-to-top-navigation: true
   page-navigation: true
   repo-url: https://github.com/haiiliin/quarto-polyu-thesis
@@ -18,36 +17,6 @@ book:
   chapters:
     - index.md
     - chapters/chapter-1.md
-
-# title: Title
-# author: Author
-
-abstract: |
-  Abstract.
-
-keywords:
-  - Keyword 1
-  - Keyword 1
-
-subject: Subject
-date: June 2025
-version: Version
-
-university: The Hong Kong Polytechnic University
-department: Department of Civil and Environmental Engineering
-institute: Thesis Research Centre
-
-city: Hong Kong
-address: Hung Hom, Kowloon
-
-partner_university: Tongji University
-partner_department: Department of Geotechnical Engineering
-
-first_viewer: First viewer
-second_viewer: Second viewer
-
-supervisor: Supervisor
-acknowledgements: Acknowledgements
 
 bibliography: bibliography.bib
 
@@ -64,3 +33,32 @@ format:
   polyu-thesis-pdf:
     keep-tex: true
     output-file: polyu-thesis
+
+    author: Hailin Wang
+
+    abstract: |
+      Abstract.
+
+    keywords:
+      - Keyword 1
+      - Keyword 1
+
+    subject: Subject
+    date: June 2025
+    version: Version
+
+    university: The Hong Kong Polytechnic University
+    department: Department of Civil and Environmental Engineering
+    institute: Thesis Research Centre
+
+    city: Hong Kong
+    address: Hung Hom, Kowloon
+
+    partner_university: Tongji University
+    partner_department: Department of Geotechnical Engineering
+
+    first_viewer: First viewer
+    second_viewer: Second viewer
+
+    supervisor: Supervisor
+    acknowledgements: Acknowledgements
