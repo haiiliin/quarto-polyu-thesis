@@ -11,7 +11,7 @@
 \newcommand{\thesisSubject}{$subject$}
 \newcommand{\thesisDate}{$date$}
 \newcommand{\thesisVersion}{$version$}
-\ifthenelse{\equal{$degree$}{doctor}}{
+\ifthenelse{\equal{$if(degree)$$degree$$else$doctor$endif$}{doctor}}{
   \newcommand{\thesisDegree}{PhD}
 }{
   \newcommand{\thesisDegree}{MPhil}
