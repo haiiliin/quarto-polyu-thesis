@@ -14,5 +14,6 @@ contributes:
       format-resources:
         - cleanthesis.sty
         - PolyU_Logo_CMKY.pdf
+        - titlepages.tex
       cite-method: biblatex
       top-level-division: chapter
