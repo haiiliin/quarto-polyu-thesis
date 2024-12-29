@@ -57,4 +57,5 @@ format:
     appendix-cite-as: display
     link-external-newwindow: true
     output-file: index
-  polyu-thesis-pdf: default
+  polyu-thesis-pdf:
+    keep-tex: true
