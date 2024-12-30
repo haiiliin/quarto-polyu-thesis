@@ -27,7 +27,6 @@ format:
     code-fold: true
     appendix-cite-as: display
     link-external-newwindow: true
-    output-file: polyu-thesis
   docx:
     output-file: polyu-thesis
   polyu-thesis-pdf:
