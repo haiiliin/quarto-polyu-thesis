@@ -1,4 +1,4 @@
-# Introduction {#sec-intro .unnumbered}
+# Introduction {#sec-intro}
 
 Introduction.
 
