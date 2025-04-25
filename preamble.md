@@ -33,7 +33,7 @@ Acknowledgements.
 % --------------------------
 % Body matter
 % --------------------------
-\pagenumbering{arabic}			% arabic page numbering
-\setcounter{page}{1}			% set page counter
-\pagestyle{maincontentstyle} 	% fancy header and footer
+\pagenumbering{arabic}        % arabic page numbering
+\setcounter{page}{1}          % set page counter
+\pagestyle{maincontentstyle}  % fancy header and footer
 ```
