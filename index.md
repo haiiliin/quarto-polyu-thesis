@@ -1,5 +1,5 @@
-# Introduction {#sec-intro .unnumbered}
+# Abstract {.unnumbered}
 
-Introduction.
+Abstract.
 
-This is a citation: @CameronTrivedi2013.
+**Keywords**: Keyword 1; Keyword 2

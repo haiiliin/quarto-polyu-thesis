@@ -16,6 +16,8 @@ book:
     search: true
   chapters:
     - index.md
+    - preamble.md
+    - introduction.md
     - chapters/chapter-1.md
 
 bibliography: bibliography.bib
@@ -35,13 +37,6 @@ format:
 
     author: Hailin Wang
 
-    abstract: |
-      Abstract.
-
-    keywords:
-      - Keyword 1
-      - Keyword 1
-
     subject: Subject
     date: June 2025
     version: Version
@@ -60,4 +55,3 @@ format:
     second_viewer: Second viewer
 
     supervisor: Supervisor
-    acknowledgements: Acknowledgements
