@@ -15,4 +15,5 @@ contributes:
         - cleanthesis.sty
         - PolyU_Logo_CMKY.pdf
       cite-method: biblatex
+      biblio-style: apa
       top-level-division: chapter
