@@ -64,3 +64,11 @@
 	bookmarksnumbered=true,		%
 	bookmarksopen=true			%
 }
+
+\usepackage{xeCJK}
+\newcommand{\printpartbibliography}[1]{
+  \begin{refsegment}
+    \nocite{#1}\printbibliography[heading=none,segment=\therefsegment]
+  \end{refsegment}
+}
+\setcounter{tocdepth}{2}
