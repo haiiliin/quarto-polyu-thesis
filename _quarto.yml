@@ -17,8 +17,8 @@ book:
   chapters:
     - index.md
     - preamble.md
-    - introduction.md
-    - chapters/chapter-1.md
+    - chapters/01-introduction.md
+    - chapters/02-chapter-2.md
 
 bibliography: bibliography.bib
 
