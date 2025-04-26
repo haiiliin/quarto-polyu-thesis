@@ -16,4 +16,9 @@ contributes:
         - PolyU_Logo_CMKY.pdf
       cite-method: biblatex
       biblio-style: apa
+      biblatexoptions:
+        - natbib=true
+        - maxcitenames=2
+        - uniquename=false
+        - uniquelist=false
       top-level-division: chapter
