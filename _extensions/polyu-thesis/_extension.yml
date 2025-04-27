@@ -22,3 +22,4 @@ contributes:
         - uniquename=false
         - uniquelist=false
       top-level-division: chapter
+      mathspec: true  # unicode-math package cannot show greek letters
