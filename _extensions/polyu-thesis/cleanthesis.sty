@@ -570,15 +570,15 @@
 %\ifthenelse{\boolean{@sectionlabeloutside}}%
 \ifct@cthesis@hangsection
 %	{%
-		\titleformat{\section}[hang]%
+		\titleformat{\section}%
 			{\usekomafont{section}}%
-			{\color{ctcolorblack}\thesection\hspace*{10pt}}%
+			{\llap{\color{ctcolorblack}\thesection\hspace*{10pt}}}%
 			{0pt}%
 			{\raggedright}%
 			[\phantomsection]
 %	}{%
 \else
-		\titleformat{\section}[block]%
+		\titleformat{\section}%
 			{\usekomafont{section}}%
 			{\color{ctcolorblack}\thesection\hspace*{10pt}}%
 			{0pt}%
@@ -592,15 +592,15 @@
 %\ifthenelse{\boolean{@subsectionlabeloutside}}%
 \ifct@cthesis@hangsubsection
 %	{%
-		\titleformat{\subsection}[hang]%
+		\titleformat{\subsection}%
 			{\usekomafont{subsection}}%
-			{\color{ctcolorblack}\thesubsection\hspace*{10pt}}%
+			{\llap{\color{ctcolorblack}\thesubsection\hspace*{10pt}}}%
 			{0pt}%
 			{\raggedright}%
 			[\phantomsection]
 %	}{%
 \else
-		\titleformat{\subsection}[block]%
+		\titleformat{\subsection}%
 			{\usekomafont{subsection}}%
 			{\color{ctcolorblack}\thesubsection\hspace*{10pt}}%
 			{0pt}%

@@ -158,9 +158,9 @@ been made in the text.
 
 \usepackage{titlesec}
 \titlespacing{\subsubsection}{0em}{.5em}{0em}%[0pt]
-\titleformat{\subsubsection}[hang]%
+\titleformat{\subsubsection}%
 	{\usekomafont{subsubsection}}%
-	{\color{ctcolorblack}\thesubsubsection\hspace*{10pt}}%
+	{\llap{\color{ctcolorblack}\thesubsubsection\hspace*{10pt}}}%
 	{0pt}%
 	{\raggedright}%
 	[\phantomsection]
