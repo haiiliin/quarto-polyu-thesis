@@ -33,6 +33,7 @@ format:
     output-file: polyu-thesis
   polyu-thesis-pdf:
     keep-tex: true
+    fig-pos: "!htb"
     output-file: polyu-thesis
 
     author: Hailin Wang
