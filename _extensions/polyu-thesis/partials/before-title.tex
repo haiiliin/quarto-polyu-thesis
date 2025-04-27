@@ -65,6 +65,89 @@
 	bookmarksopen=true			%
 }
 
+% Command for creating the thesis title page in accordance with the
+% requirements of the Hong Kong Polytechnic University.
+% For usage example, see thesis.tex.
+%
+\newcommand{\thesistitlepage}[2]{%
+  \pdfbookmark[0]{Title Page}{Title Page}
+  \label{sec:titlepage}
+  \thispagestyle{empty}
+  \begin{center}
+
+  \renewcommand{\baselinestretch}{3.0}%
+  \textbf{\LARGE {\thesisUniversity}}
+  \vspace{0.5cm}
+
+  \renewcommand{\baselinestretch}{1.0}%
+  \textbf{\Large {\thesisUniversityDepartment}}
+  \vspace{2.0cm}
+
+  \ifx\thesisPartnerUniversity\empty\else
+	\renewcommand{\baselinestretch}{1.0}%
+	\textbf{\LARGE {\thesisPartnerUniversity}}
+	\vspace{0.5cm}
+  \fi
+
+  \ifx\thesisPartnerUniversityDepartment\empty\else
+    \renewcommand{\baselinestretch}{1.0}%
+    \textbf{\Large {\thesisPartnerUniversityDepartment}}
+    \vspace{2.0cm}
+  \fi
+
+  \renewcommand{\baselinestretch}{1.0}%
+  \textbf{\LARGE {\thesisTitle}}
+  \vspace{2.0cm}
+
+  \renewcommand{\baselinestretch}{1.0}%
+  \textbf{\large\itshape\bfseries {\thesisName}}
+  \vspace{2.0cm}
+
+  \vspace{\fill}
+  \textbf{\large
+  A thesis \\
+  submitted in partial fulfilment of the requirements \\
+  for the degree of \\
+  \vspace{1.0cm}
+  {#1} \\
+  }
+  \vspace{3.0cm}
+  \textbf{\large {\thesisDate}}
+
+  \vspace{2.0cm}
+  \renewcommand{\baselinestretch}{1.0}%
+  \textbf{\large {#2}}
+  \end{center}
+}
+
+\newcommand{\declaration}[1]{%
+  \thispagestyle{plain}
+  \pdfbookmark[0]{CERTIFICATE OF ORIGINALITY}{CERTIFICATE OF ORIGINALITY}
+  \chapter*{CERTIFICATE OF ORIGINALITY}
+  \label{sec:certificate}
+  \begin{center}
+  \end{center}
+%  \vspace*{\fill}
+  \vspace{1.0cm}
+  \noindent
+I hereby declare that this thesis is my own work and that, to the best of
+my knowledge and belief, it reproduces no material previously
+published or written, nor material that has been accepted for the award
+of any other degree or diploma, except where due acknowledgement has
+been made in the text.
+  \par\noindent
+  \vspace{\stretch{0.1}}
+  \begin{flushleft}
+    \begin{tabular}{l p{0.5in} p{1in} p{0.5in} l}
+      & & & & (Signed) \\
+      \cline{1-4}\\
+      & & {\thesisName} & & (Name of student) \\
+      \cline{1-4}\\
+    \end{tabular}
+  \end{flushleft}
+  \vspace{\fill}
+}
+
 \usepackage{xeCJK}
 \newcommand{\printpartbibliography}[1]{
   \begin{refsegment}
