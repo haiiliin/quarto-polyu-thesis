@@ -72,3 +72,12 @@
   \end{refsegment}
 }
 \setcounter{tocdepth}{2}
+
+\usepackage{titlesec}
+\titlespacing{\subsubsection}{0em}{.5em}{0em}%[0pt]
+\titleformat{\subsubsection}[hang]%
+	{\usekomafont{subsubsection}}%
+	{\color{ctcolorblack}\thesubsubsection\hspace*{10pt}}%
+	{0pt}%
+	{\raggedright}%
+	[\phantomsection]
