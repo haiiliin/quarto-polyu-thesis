@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Title",
+    "section": "",
+    "text": "Abstract\nAbstract.\nKeywords: Keyword 1; Keyword 2",
+    "crumbs": [
+      "Abstract"
+    ]
+  },
+  {
+    "objectID": "preamble.html",
+    "href": "preamble.html",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "Acknowledgements.",
+    "crumbs": [
+      "Acknowledgements"
+    ]
+  },
+  {
+    "objectID": "chapters/01-introduction.html",
+    "href": "chapters/01-introduction.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "Introduction.\nThis is a citation: Cameron and Trivedi (2013).\n\n\n\n\n\nCameron, A. Colin, and Pravin K. Trivedi. 2013. Regression Analysis of Count Data. 2nd ed. Cambridge: Cambridge University Press.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-chapter-2.html",
+    "href": "chapters/02-chapter-2.html",
+    "title": "2  A chapter",
+    "section": "",
+    "text": "This is a chapter.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>A chapter</span>"
+    ]
+  }
+]
