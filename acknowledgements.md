@@ -9,19 +9,19 @@ Acknowledgements.
 \phantomsection
 \addcontentsline{toc}{chapter}{Table of Contents}
 \tableofcontents
-\cleardoublepage
 
+\cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{List of Figures}
 \listoffigures
-\cleardoublepage
 
+\cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{List of Tables}
 \listoftables
-\cleardoublepage
 
 % Body matter
+\cleardoublepage
 \pagenumbering{arabic}
 \setcounter{page}{1}
 \pagestyle{maincontentstyle}
