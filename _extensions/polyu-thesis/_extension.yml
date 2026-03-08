@@ -6,7 +6,6 @@ contributes:
   formats:
     pdf:
       toc: false
-      documentclass: polyuthesis
       template-partials:
         - partials/doc-class.tex
         - partials/before-title.tex
