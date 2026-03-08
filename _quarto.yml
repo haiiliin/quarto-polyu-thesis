@@ -31,6 +31,7 @@ format:
     link-external-newwindow: true
   docx:
     output-file: polyu-thesis
+    reference-doc: template.docx
   polyu-thesis-pdf:
     keep-tex: true
     fig-pos: "!htb"
