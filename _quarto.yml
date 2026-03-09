@@ -15,11 +15,11 @@ book:
   sidebar:
     search: true
   chapters:
-    - index.md
-    - acknowledgements.md
-    - chapters/01-introduction.md
-    - chapters/02-chapter-2.md
-    - references.md
+    - index.qmd
+    - acknowledgements.qmd
+    - chapters/01-introduction.qmd
+    - chapters/02-chapter-2.qmd
+    - references.qmd
 
 bibliography: bibliography.bib
 
