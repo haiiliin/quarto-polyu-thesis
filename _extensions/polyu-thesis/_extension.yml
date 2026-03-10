@@ -6,8 +6,20 @@ contributes:
   formats:
     pdf:
       toc: false
+      documentclass: scrreprt
+      classoption:
+        - 12pt
+        - twoside=true
+        - openright
+        - parskip=full
+        - chapterprefix=true
+        - headings=normal
+        - bibliography=totoc
+        - listof=totoc
+        - titlepage=on
+        - captions=tableabove
+      papersize: a4
       template-partials:
-        - partials/doc-class.tex
         - partials/before-title.tex
         - partials/before-body.tex
       format-resources:
