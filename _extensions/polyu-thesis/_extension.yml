@@ -19,11 +19,22 @@ contributes:
         - titlepage=on
         - captions=tableabove
       papersize: a4
+      geometry:
+        - nohead
+        - includefoot
+        - includemp
+        - bindingoffset=0.5cm
+        - top=1.5cm
+        - left=1.5cm
+        - right=1.5cm
+        - bottom=1.5cm
+        - marginparwidth=1cm
+        - marginparsep=10pt
+        - footskip=2cm
       template-partials:
         - partials/before-title.tex
         - partials/before-body.tex
       format-resources:
-        - cleanthesis.sty
         - PolyU_Logo_CMKY.pdf
       cite-method: biblatex
       biblio-style: apa
