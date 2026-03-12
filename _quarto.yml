@@ -5,7 +5,6 @@ comments:
   hypothesis: true
 
 book:
-  title: Title
   back-to-top-navigation: true
   page-navigation: true
   repo-url: https://github.com/haiiliin/quarto-polyu-thesis
@@ -14,6 +13,10 @@ book:
   output-file: polyu-thesis
   sidebar:
     search: true
+
+  title: Title
+  author: Hailin WANG
+  date: June 1, 2026
   chapters:
     - index.qmd
     - acknowledgements.qmd
@@ -38,10 +41,7 @@ format:
     fig-pos: "!htb"
     output-file: polyu-thesis
 
-    author: Hailin Wang
-
     subject: Subject
-    date: June 2025
     version: Version
 
     university: The Hong Kong Polytechnic University
