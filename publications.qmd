@@ -1,0 +1,27 @@
+# Publications {.unnumbered}
+
+## Published papers {.unnumbered .unlisted}
+
+JOURNAL
+: Full reference of the paper.
+
+## Papers under review {.unnumbered .unlisted}
+
+```{=latex}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Table of Contents}
+\tableofcontents
+
+\cleardoublepage
+\listoffigures
+
+\cleardoublepage
+\listoftables
+
+% Body matter
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{maincontentstyle}
+```

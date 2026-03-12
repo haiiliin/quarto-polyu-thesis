@@ -20,6 +20,7 @@ book:
   chapters:
     - index.qmd
     - acknowledgements.qmd
+    - publications.qmd
     - chapters/01-introduction.qmd
     - chapters/02-chapter-2.qmd
     - references.qmd
@@ -40,6 +41,16 @@ format:
     keep-tex: true
     fig-pos: "!htb"
     output-file: polyu-thesis
+    include-in-header:
+      - text: |
+          \usepackage{enumitem}
+          \setlist[description]{
+            align=right,    % label alignment
+            leftmargin=!,   % calculate left margin automatically
+            labelwidth=2cm, % label width
+            labelsep=0.5em, % space between label and description
+            font=\bfseries\sffamily\color{thesisaccessory}, % label font
+          }
 
     subject: Subject
     version: Version
