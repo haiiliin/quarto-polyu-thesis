@@ -34,9 +34,11 @@ format:
     code-fold: true
     appendix-cite-as: display
     link-external-newwindow: true
+    csl: apa.csl
   docx:
     output-file: polyu-thesis
     reference-doc: template.docx
+    csl: apa.csl
   polyu-thesis-pdf:
     keep-tex: true
     fig-pos: "!htb"
