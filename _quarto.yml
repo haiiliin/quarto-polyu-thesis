@@ -26,6 +26,8 @@ book:
     - references.qmd
 
 bibliography: bibliography.bib
+filters:
+  - wordcount
 
 format:
   html:

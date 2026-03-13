@@ -3,3 +3,13 @@
 Abstract.
 
 **Keywords**: Keyword 1; Keyword 2
+
+::: {.content-visible when-format="pdf"}
+
+::: {.callout-note}
+## Word Count
+
+Word count: {{wordcount}} words, {{wordcountref}} words including references.
+:::
+
+:::
