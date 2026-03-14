@@ -1,0 +1,82 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Title",
+    "section": "",
+    "text": "Abstract\nAbstract.\nKeywords: Keyword 1; Keyword 2",
+    "crumbs": [
+      "Abstract"
+    ]
+  },
+  {
+    "objectID": "acknowledgements.html",
+    "href": "acknowledgements.html",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "Acknowledgements.",
+    "crumbs": [
+      "Acknowledgements"
+    ]
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Published papers",
+    "crumbs": [
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "publications.html#published-papers",
+    "href": "publications.html#published-papers",
+    "title": "Publications",
+    "section": "",
+    "text": "JOURNAL\n\nFull reference of the paper.",
+    "crumbs": [
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "publications.html#papers-under-review",
+    "href": "publications.html#papers-under-review",
+    "title": "Publications",
+    "section": "Papers under review",
+    "text": "Papers under review",
+    "crumbs": [
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "chapters/01-introduction.html",
+    "href": "chapters/01-introduction.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "Introduction.\nThis is a citation: Cameron & Trivedi (2013).\n\n\n\n\nCameron, A. C., & Trivedi, P. K. (2013). Regression analysis of count data (2nd ed.). Cambridge University Press.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-chapter-2.html",
+    "href": "chapters/02-chapter-2.html",
+    "title": "2  A chapter",
+    "section": "",
+    "text": "This is a chapter.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>A chapter</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Cameron, A. C., & Trivedi, P. K. (2013). Regression analysis of\ncount data (2nd ed.). Cambridge University Press.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]
