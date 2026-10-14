@@ -20,8 +20,8 @@ book:
   date-format: MMMM, YYYY
   chapters:
     - index.qmd
-    - acknowledgements.qmd
     - publications.qmd
+    - acknowledgements.qmd
     - chapters/01-introduction.qmd
     - chapters/02-chapter-2.qmd
     - references.qmd
