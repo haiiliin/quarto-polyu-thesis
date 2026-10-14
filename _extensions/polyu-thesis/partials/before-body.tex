@@ -3,18 +3,23 @@
 % --------------------------
 \pagenumbering{roman}  % roman page numbing (invisible for empty page style)
 \pagestyle{empty}	   % no header or footers
-% \input{titlepages}     % INCLUDE: all titlepages
-% \cleardoublepage
 
 %% title page
 \pagestyle{empty}
 \ifthenelse{\equal{\thesisDegree}{PhD}}{
-  \thesistitlepage{Doctor of Philosophy}%{Temporary Binding for Examination Purposes}
-}{
-  \thesistitlepage{Master of Philosophy}%{Temporary Binding for Examination Purposes}
-}
-\cleardoublepage
+  \thesiscoverpage{PhD}
+  \cleardoublepage
 
-\pagestyle{plain}				% display just page numbers
+  \thesistitlepage{Doctor of Philosophy}%{Temporary Binding for Examination Purposes}
+  \cleardoublepage
+}{
+  \thesiscoverpage{PhD}
+  \cleardoublepage
+
+  \thesistitlepage{Master of Philosophy}%{Temporary Binding for Examination Purposes}
+  \cleardoublepage
+}
+
+\pagestyle{plain} % display just page numbers
 \declaration
 \cleardoublepage

@@ -33,58 +33,110 @@
 \newcommand{\thesisPartnerUniversity}{$partner_university$}
 \newcommand{\thesisPartnerUniversityDepartment}{$partner_department$}
 
+% Font Definitions (see http://www.tug.dk/FontCatalogue/)
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}  % font set: Latin Modern
+\usepackage{charter}  % font set: Charter
+
+% Colors
+\definecolor{thesisblack}{gray}{0}
+\definecolor{thesismain}{cmyk}{1, .50, .10, .01}
+\definecolor{thesisaccessory}{cmyk}{.18, .98, .18, 0}
+
 % Command for creating the thesis title page in accordance with the
 % requirements of the Hong Kong Polytechnic University.
-% For usage example, see thesis.tex.
-%
+\newcommand{\thesiscoverpage}[1]{
+  % cover page
+  \ifx\thesisVersion\empty\else
+    \begin{titlepage}
+      \pdfbookmark[0]{Cover}{Cover}
+      \flushright
+      \hfill
+      \vfill
+      {\LARGE\thesisTitle \par}
+      \rule[5pt]{\textwidth}{.4pt} \par
+      {\Large\thesisName}
+      \vfill
+      \textit{\large\thesisDate} \\
+      Version: \thesisVersion
+    \end{titlepage}
+  \fi
+
+  % main cover page
+  \begin{titlepage}
+    \pdfbookmark[0]{Cover Page}{Cover Page}
+    % \tgherosfont
+    \centering
+
+    \includegraphics[width=6cm]{PolyU_Logo_CMKY} \\[4mm]
+    {\Large \thesisUniversity} \\[4mm]
+    \textsf{\thesisUniversityDepartment} \\
+    \textsf{\thesisUniversityInstitute} \\
+    %\textsf{\thesisUniversityGroup} \\
+
+    \vfill
+    % {\large \thesisSubject} \\[5mm]
+    {\LARGE\bfseries\color{thesismain} \MakeUppercase{\thesisTitle} \par} \vspace{10mm}
+    {\Large \MakeUppercase{\thesisName}} \\[5mm]
+
+    \vfill
+    {\large \thesisDegree} \\[5mm]
+    {\Large \thesisUniversity} \\[5mm]
+    \ifx\thesisPartnerUniversity\empty\else
+      {\large
+      This programme is jointly offered by \thesisUniversity\ and \thesisPartnerUniversity \par} \vspace{5mm}
+    \fi
+
+    \vfill
+    {\large \thesisDate} \\[5mm]
+    \ifthenelse{\equal{$initial$}{true}}{\large Initial Submission for Examination Purpose}{}
+  \end{titlepage}
+}
+
 \newcommand{\thesistitlepage}[2]{%
   \pdfbookmark[0]{Title Page}{Title Page}
   \label{sec:titlepage}
   \thispagestyle{empty}
   \begin{center}
 
+  ~\par\vspace{2cm}
   \renewcommand{\baselinestretch}{3.0}%
-  \textbf{\LARGE {\thesisUniversity}}
+  {\LARGE {\thesisUniversity}}
   \vspace{0.5cm}
 
   \renewcommand{\baselinestretch}{1.0}%
-  \textbf{\Large {\thesisUniversityDepartment}}
-  \vspace{2.0cm}
+  {\Large {\thesisUniversityDepartment}}
+  \vspace{1cm}
 
   \ifx\thesisPartnerUniversity\empty\else
     \renewcommand{\baselinestretch}{1.0}%
-    \textbf{\LARGE {\thesisPartnerUniversity}}
+    {\LARGE {\thesisPartnerUniversity}}
     \vspace{0.5cm}
-  \fi
-
-  \ifx\thesisPartnerUniversityDepartment\empty\else
+  
     \renewcommand{\baselinestretch}{1.0}%
-    \textbf{\Large {\thesisPartnerUniversityDepartment}}
-    \vspace{2.0cm}
+    {\Large {\thesisPartnerUniversityDepartment}}
   \fi
+  \vfill
 
   \renewcommand{\baselinestretch}{1.0}%
-  \textbf{\LARGE {\thesisTitle}}
-  \vspace{2.0cm}
+  {\LARGE\bfseries {\thesisTitle}}
+  \vspace{0.5cm}
 
   \renewcommand{\baselinestretch}{1.0}%
-  \textbf{\large\itshape\bfseries {\thesisName}}
-  \vspace{2.0cm}
+  {\large\itshape {\thesisName}}
+  \vfill
 
-  \vspace{\fill}
-  \textbf{\large
+  {\large
   A thesis \\
   submitted in partial fulfilment of the requirements \\
-  for the degree of \\
-  \vspace{1.0cm}
-  {#1} \\
+  for the degree of {#1} \\
   }
-  \vspace{3.0cm}
-  \textbf{\large {\thesisDate}}
+  \vfill
 
-  \vspace{2.0cm}
+  {\large {\thesisDate}}
+  \vspace{0.5cm}
   \renewcommand{\baselinestretch}{1.0}%
-  \textbf{\large {#2}}
+  {\large {#2}}
   \end{center}
 }
 
@@ -127,16 +179,6 @@ been made in the text.
   bookmarksnumbered=true,       %
   bookmarksopen=true            %
 }
-
-% Font Definitions (see http://www.tug.dk/FontCatalogue/)
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}  % font set: Latin Modern
-\usepackage{charter}  % font set: Charter
-
-% Colors
-\definecolor{thesisblack}{gray}{0}
-\definecolor{thesismain}{cmyk}{1, .50, .10, .01}
-\definecolor{thesisaccessory}{cmyk}{.18, .98, .18, 0}
 
 % Header and Footer
 \usepackage{fancyhdr}
@@ -220,8 +262,8 @@ been made in the text.
   {\normalfont\bfseries\color{thesismain}}
   {\filleft\fontsize{26}{30}\selectfont\scshape Chapter \thechapter}
   {1ex}
-  {\titlerule[1pt]\vspace{1ex}\filright\Huge}
-  [\vspace{1ex}\titlerule]
+  {\vspace{1ex}\filright\Huge}
+  [\vspace{1ex}]
 
 % formats: \section
 \titleformat{\section}

@@ -34,9 +34,9 @@ format:
 - `author`: Author
 - `abstract`: Abstract
 - `keywords`: Keywords
-- `subject`: Subject
 - `date`: Date
-- `version`: Version
+- `initial`: Whether it is initial submission
+- `version`: Draft version, leave it empty to delete the first cover page
 - `university`: University, by default "The Hong Kong Polytechnic University"
 - `department`: Department
 - `institute`: Institute, by default "Thesis Research Centre"
@@ -44,7 +44,5 @@ format:
 - `address`: Address, by default "Hung Hom, Kowloon"
 - `partner_university`: Partner university
 - `partner_department`: Partner department
-- `first_viewer`: First viewer
-- `second_viewer`: Second viewer
 - `supervisor`: Supervisor
 - `acknowledgement`: Acknowledgement
