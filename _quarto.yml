@@ -48,6 +48,9 @@ format:
     output-file: polyu-thesis
     include-in-header:
       - text: |
+          \allowdisplaybreaks[2]
+          \linespread{1.5}
+
           \usepackage{enumitem}
           \setlist[description]{
             align=right,    % label alignment
