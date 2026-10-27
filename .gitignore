@@ -65,3 +65,4 @@
 /releases/*/*.tex
 /releases/*/*.thm
 /releases/*/*.toc
+/_*.local
