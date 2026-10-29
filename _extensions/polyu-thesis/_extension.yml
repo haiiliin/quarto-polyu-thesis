@@ -6,7 +6,7 @@ contributes:
   formats:
     pdf:
       toc: false
-      documentclass: scrreprt
+      documentclass: report
       classoption:
         - 12pt
         - twoside=true
