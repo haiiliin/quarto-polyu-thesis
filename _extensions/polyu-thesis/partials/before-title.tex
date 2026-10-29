@@ -39,9 +39,10 @@
 \usepackage{charter}  % font set: Charter
 
 % Colors
-\definecolor{thesisblack}{gray}{0}
-\definecolor{thesismain}{cmyk}{1, .50, .10, .01}
-\definecolor{thesisaccessory}{cmyk}{.18, .98, .18, 0}
+% https://www.polyu.edu.hk/cdo/useful-information/brandbook/
+\definecolor{thesisblack}{RGB}{0, 0, 0}
+\definecolor{thesismain}{RGB}{160, 35, 55}
+\definecolor{thesisaccessory}{RGB}{88, 89, 91}
 
 % Command for creating the thesis title page in accordance with the
 % requirements of the Hong Kong Polytechnic University.
@@ -174,6 +175,7 @@ been made in the text.
   pdfauthor={\thesisName},      %   - author (PDF meta)
   plainpages=false,             %   - 
   colorlinks=true,              %   - colorize links?
+  allcolors=thesismain,         %   - all links color
   pdfborder={0 0 0},            %   -
   breaklinks=true,              %   - allow line break inside links
   bookmarksnumbered=true,       %
