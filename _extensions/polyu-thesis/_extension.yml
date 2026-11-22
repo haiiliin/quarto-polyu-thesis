@@ -9,7 +9,7 @@ contributes:
       documentclass: report
       classoption:
         - 12pt
-        - twoside=true
+        - twoside
         - openright
         - parskip=full
         - chapterprefix=true
